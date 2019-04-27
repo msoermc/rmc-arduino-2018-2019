@@ -1,2 +1,2 @@
 # rmc-arduino-2018-2019
-The arduino code for our 2018-2019 control system
+For our control system this year, we are using a BeagleBone Black as our main controller and an Arduino Uno to interface with several RoboClaw motor controllers via PWM. The BeagleBone Black communicates with the Arduino over serial, sending a 3-digit number contained in a single byte. The smallest digit of the number (1-3) selects which device to output to, the middle digit (0-9) determines the speed of the motor, and the largest digit (0 or 1) determines the drive direction of the motor.
